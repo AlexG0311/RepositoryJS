@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        ul#demo {
+          max-height: 100px;
+          overflow-y: hidden;
+        
+          /* this will animate the element for 1
+             second when its properties change */
+          transition: all 1s;
+        }
+      </style>
+    </head>
+    <body>
+      <ul id="demo">
+        <li> Mercury </li>
+        <li> Venus </li>
+        <li> Earth </li>
+        <li> Mars </li>
+      </ul>
+      <div>
+        <button onclick="slideUp()"> Slide Up </button>
+        <button onclick="slideDown()"> Slide Down </button>
+      </div>
+      <p> Click <b>Slide Up</b> first then <b>Slide Down</b> to see how it works. </p>
+    
+      <script type="text/javascript">
+          function slideUp() {
+          const elem = document.getElementById("demo");
+        
+          elem.style.maxHeight = "0px";
+        }
+           
+        function slideDown() {
+          const elem = document.getElementById("demo");
+           
+          elem.style.maxHeight = "100px";
+        }
+      </script>
+    </body>
+    </html>

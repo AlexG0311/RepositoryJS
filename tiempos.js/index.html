@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<p  id = "texto">Preciona el boton antes de 3 segundos o saldra una ventana de alarma</p>
+<button onclick="cancelar()">Preciona aqui</button>
+
+
+<script>
+
+function myFuncion(){
+    alert("Tenias que precionar el boton pelotudooo");
+}
+
+const timeout = setTimeout(myFuncion,3000);
+
+function cancelar(){
+    clearTimeout(timeout);
+    document.getElementById("texto").innerHTML = "Yupi haz cancelado el boton de autodestruccion";
+}
+
+
+
+</script>
+
+<p id = "p" >10</p>
+
+<script src="setInterval.js"></script>
+</body>
+</html>

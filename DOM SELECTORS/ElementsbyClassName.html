@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-BY-CLASSNAME</title>
+</head>
+<body>
+
+    <p class="big-green">My class name is <b>big-green</b>. Welcome to the coding world!</p>
+    <p>I have no class name. </p>
+    <p class="big-green">My class name is <b>big-green</b>. Welcome to the coding world!</p>
+    <p>I have no class name. </p>
+    <p class="big-green">My class name is <b>big-green</b>. Welcome to the coding world!</p>
+    <p>I have no class name. </p>
+
+    <script type="text/javascript">
+
+    const element = document.getElementsByClassName("big-green");
+
+    for (let i = 0; i < element.length; i++) {
+        
+        element[i].style.fontSize = "20px";
+        element[i].style.color = "green";
+        
+    }
+
+
+
+    </script>
+</body>
+</html>

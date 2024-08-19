@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigator</title>
+</head>
+<body>
+    <p id = "plataform"></p>
+    <p id = "lenguaje"></p>
+    <p id = "appName"></p>
+    <p id = "appCodeName"></p>
+    <p id = "appVersion"></p>
+    <p id = "userAgent"></p>
+    <p id = "onLine"></p>
+    
+<script>
+
+const plataform = document.getElementById("plataform").innerHTML = navigator.platform;
+
+const lenguaje = document.getElementById("lenguaje").innerHTML = navigator.language;
+
+
+const appName = document.getElementById("appName").innerHTML = navigator.appName;
+
+
+
+const appCodeName = document.getElementById("appCodeName").innerHTML = navigator.appCodeName;
+
+
+
+const appVersion = document.getElementById("appVersion").innerHTML = navigator.appVersion;
+
+
+
+const userAgent = document.getElementById("userAgent").innerHTML = navigator.userAgent;
+
+
+
+const onLine = document.getElementById("onLine").innerHTML = navigator.onLine;
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

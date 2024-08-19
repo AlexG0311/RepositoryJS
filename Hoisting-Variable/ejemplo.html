@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoisting</title>
+</head>
+<body>
+
+<p id = "fruit"></p>
+<p id = "name"></p>
+
+<script>
+
+    fruit = "mango";
+    document.getElementById("fruit").innerHTML = fruit;
+    var fruit;
+
+
+    // ASI NO PODRA EJECUTARSE PORQUE LA VARIABLE PERSONA SE USO PRIMERO 
+    // ANTES DE SER USADA
+
+    var persona;
+
+    document.getElementById("name").innerHTML = persona;
+
+    persona = "Alex";
+
+
+</script>
+
+
+
+
+</body>
+</html>

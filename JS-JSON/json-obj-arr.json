@@ -1,0 +1,11 @@
+{
+
+    "favorites":{
+        "food": "fried chiken",
+        "game": "CSGO and DOTA2",
+        "color": "blue"
+    },
+
+    "hobbies": ["coding","gaming","playing chess"]
+
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<p>Notice that we used <b>[0]</b> which selects the first item in an array. It 
+is because the <b>document.querySelectorAll()</b>returns an array of objects (elements). </p>
+<p id = "demo"> Lorem ipsum.</p>
+
+<script>
+
+document.querySelectorAll("#demo")[0].innerHTML = "Hello World!";
+
+</script>
+
+</body>
+</html>

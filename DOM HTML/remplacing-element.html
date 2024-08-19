@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remplacing</title>
+</head>
+<body>
+
+<p id = "demo">Este texto cambiara</p>
+<button   onclick="cambiarTexto()">Camabiar Texto</button>
+<ul id = "list">
+    <li> Mangoes</li>
+    <li> Banana</li>
+    <li> Oranges</li>
+</ul>
+<button onclick="remplaceContent()">Cambiar Lista</button>
+
+
+
+<script>
+
+const list = document.getElementById("list");
+
+function remplaceContent(){
+    list.innerHTML = 
+    "<li> Mercury</li>" +
+    "<li> Venus</li>" +
+    "<li> Earth</li>";
+}
+
+function cambiarTexto(){
+
+    document.getElementById("demo").innerHTML = "Este es el nuevo texto";
+}
+
+
+</script>
+
+
+    
+</body>
+</html>

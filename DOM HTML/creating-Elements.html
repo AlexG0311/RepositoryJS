@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Nodes</title>
+</head>
+<body>
+    <div id="demo"></div>
+
+<script>
+
+const element = document.createElement("p");
+
+const textNode = document.createTextNode("Loren ipsum dolor sit amet. ");
+
+element.appendChild(textNode);
+
+document.getElementById("demo").appendChild(element);
+
+
+</script>
+</body>
+</html>

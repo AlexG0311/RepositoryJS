@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ByName</title>
+</head>
+<body>
+
+    <h1> Dijite tus datos</h1>
+    <p><label>First Name: <input type="text" name = "firstName"></label></p>
+    <p><label>last  Name:<input type="text" name = "lastName"></label></p>
+    
+    <button onclick="getValue()" >Click</button>
+    <script>
+
+function getValue(){
+
+const element1 = document.getElementsByName("firstName")[0].value;
+
+const element2 = document.getElementsByName("lastName")[0].value;
+
+
+const fullName = "The first Name es: " + element1 + " and las Name is : " + element2;
+
+alert(fullName);
+
+}
+
+
+ 
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
