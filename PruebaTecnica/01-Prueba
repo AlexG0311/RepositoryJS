@@ -1,0 +1,19 @@
+/*Escribe una función llamada filtrarPares que reciba un arreglo de 
+números y devuelva un nuevo arreglo con solo los números pares.
+*/
+
+const numeros = [1, 2, 3, 4, 5, 6];
+
+function filtrarPares(numeros) {
+const pares = []
+for (const par of numeros) {
+if(par % 2 == 0){
+pares.push(par);
+
+}
+
+}
+return pares;
+}
+const respuesta = filtrarPares(numeros); 
+console.log(respuesta); // [2, 4, 6]

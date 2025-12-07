@@ -1,3 +1,6 @@
+// HACE REFERENCIA A LA MISMA CLASE
+
+
 const persona = {
 
     name: "Alex",

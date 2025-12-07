@@ -1,6 +1,6 @@
 const cargarPeliculas = async () => {
     try {
-      const respuesta = await fetch("http://10.8.8.250:5041/api/Products");
+      const respuesta = await fetch("./persona.json");
       console.log(respuesta);
   
       const res = await respuesta.json();

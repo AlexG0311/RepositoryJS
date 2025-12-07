@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+<h1>Listas de Tareas</h1>
+
+<input type="text" placeholder="Nueva Tarea" id="newList">
+<button onclick="AgregarTarea()" >Agregar</button>
+<ul id="asignarTarea"></ul>
+</body>
+
+<script>
+const array = []
+
+function AgregarTarea(){
+// Obtenemos la lista
+const newList = document.getElementById("newList").value;
+//obtenemos donde se asigna
+const lista = document.getElementById("asignarTarea")
+
+
+
+array.push(newList)
+const input = document.getElementById("newList")
+input.value = ""
+
+lista.innerHTML = ""
+
+for( list of array) {
+
+const li = document.createElement("li")
+li.innerHTML = list;
+lista.appendChild(li)
+}
+
+}
+
+</script>
+
+</html>

@@ -23,7 +23,7 @@ function guardarLocalStorge(){
 
 
 }
- //  guardarLocalStorge();
+   guardarLocalStorge();
 
 
 function obtenerLocalStorage(){

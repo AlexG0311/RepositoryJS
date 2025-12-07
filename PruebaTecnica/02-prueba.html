@@ -1,0 +1,27 @@
+/*Crea un botón en HTML. Usa JavaScript 
+para agregarle un evento que muestre un mensaje en la consola cuando sea clickeado.*/
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<button id = "miBoton" onclick="clickButtob()">boton</button>
+
+  
+</body>
+<script>
+    const boton = document.getElementById("miBoton")
+    let cantidad = 0;
+ function clickButtob(){
+   
+     cantidad ++;
+     console.log(`se ha clickeado el bton ${cantidad}   de veces`)
+ } 
+
+ </script>
+</html>

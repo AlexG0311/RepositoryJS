@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tablero Parchís</title>
+</head>
+<body>
+  <canvas id="gameCanvas" width="600" height="600"></canvas>
+
+  <script>
+    const canvas = document.getElementById('gameCanvas');
+    const ctx = canvas.getContext('2d');
+
+    const tileSize = 40; // Tamaño de cada casilla
+    const boardSize = 15; // Número de casillas por lado
+
+    // Colores para las áreas de cada jugador
+    const colors = {
+      red: '#FF5733',
+      blue: '#3498DB',
+      yellow: '#F4D03F',
+      green: '#28B463',
+    };
+
+    // Dibujar una casilla
+    function drawTile(x, y, color) {
+      ctx.fillStyle = color;
+      ctx.fillRect(x * tileSize, y * tileSize, tileSize, tileSize);
+      ctx.strokeStyle = '#000';
+      ctx.strokeRect(x * tileSize, y * tileSize, tileSize, tileSize);
+    }
+
+    // Dibujar tablero
+    function drawBoard() {
+      for (let row = 0; row < boardSize; row++) {
+        for (let col = 0; col < boardSize; col++) {
+          let color = '#FFFFFF'; // Casillas blancas por defecto
+
+          // Definir colores de áreas especiales
+          if (row < 6 && col < 6) color = colors.red; // Esquina roja
+          if (row < 6 && col > 8) color = colors.blue; // Esquina azul
+          if (row > 8 && col < 6) color = colors.green; // Esquina verde
+          if (row > 8 && col > 8) color = colors.yellow; // Esquina amarilla
+
+          drawTile(col, row, color);
+        }
+      } 
+    }
+
+    drawBoard();
+  </script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+body{
+    background-color: black;
+}
+
+label{
+   color: cornsilk;
+}
+
+.contenedor{
+    align-items: center;
+    place-content: center;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    width: auto;
+   
+
+}
